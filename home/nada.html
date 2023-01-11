@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+        html,
+        body {
+            background: black;
+            width: 100vw;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ouro {
+            background: url('../sobre/ouro.png') no-repeat transparent;
+            background-position: center;
+            background-size: cover;
+            width: 45%;
+            height: 90%;
+            animation: spin 10s linear infinite;
+
+
+        }
+
+        .txt {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            color: white;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Syne Mono', monospace;
+            font-size: 35px;
+
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <div class="ouro">
+
+    </div>
+    <div class="txt">
+        <p>continue viajando pelo<br> infinito com ouroboros<br> ou volte para o inicio</p>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            window.location.href = "home.html";
+        }, 9000)
+    </script>
+</body>
+
+</html>
