@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0;
+    cursor: default;
+}
+
+body {
+    height: 100vw;
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background: black;
+    color: black;
+}
+
+
+header {
+    width: 100%;
+    height: auto;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    cursor: default;
+    line-height: 45px;
+
+}
+
+header a {
+    font-size: 1.5rem;
+    margin: 5px 25px 5px 25px;
+    color: #f54952;
+    transition: ease-in 1s;
+    border-bottom: solid crimson 1px;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+}
+
+header a:hover {
+    -webkit-animation: cima 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: cima 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    color: black;
+}
+
+header img {
+    width: 20%;
+    filter: drop-shadow(-1px 2px 24px crimson);
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background: url("../home/image.png") black;
+    mix-blend-mode: lighten;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    transform: translateX(2000px);
+    transition: 1s;
+}
+
+.selecao {
+    width: 20%;
+    height: 250vh;
+    border-right: solid 2px #220000;
+    border-top: solid 2px #220000;
+    display: flex;
+    flex-direction: column;
+    color: beige;
+    box-shadow: -1px 2px 24px 7px #5906062d;
+    padding: 5px 5px 5px 5px;
+    background: rgba(71, 59, 59, 0.415);
+    backdrop-filter: blur(12px);
+    margin: 0 20px 0 0;
+
+}
+
+.selecao h2 {
+    font-size: 2.5rem;
+    margin: 30px 0 020px;
+}
+
+.selecao div {
+    border-top: solid 1px #220000;
+    padding: 10px;
+    box-shadow: -1px 2px 24px 7px #5906062d;
+    margin: 5px 0 5px 0;
+
+}
+
+.selecao h3,
+.selecao p {
+    margin: 5px 5px 5px 5px;
+}
+
+.selecao h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+}
+
+.selecao .bi-spotify {
+    width: auto;
+    height: 50%;
+    float: right;
+    object-fit: contain;
+    color: green;
+    transition-property:
+        outline-offset, outline-color,
+        background-color;
+    transition-duration: .25s;
+}
+
+.selecao .bi-spotify:hover {
+    filter: drop-shadow(3px 2px 20px rgb(0, 255, 136));
+    outline: solid 2px green;
+    border-radius: 50%;
+    outline-offset: 4px;
+    color: #00ff37 !important;
+}
+
+.bi-arrow-left-circle:hover {
+    color: #b50000 !important;
+}
+
+.selecao div:hover {
+    background: url('../home/image.png') #590606;
+    mix-blend-mode: lighten;
+}
+
+.music {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+
+}
+
+.vidro {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(68, 58, 58, 0.415);
+    border: solid rgba(255, 254, 254, 0.2) 2px;
+    backdrop-filter: blur(12px);
+    margin: 10px 0 0 0;
+
+    margin: 50px 0 0 0;
+
+
+}
+
+.player {
+    width: 80%;
+    height: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    margin: 20px 0 0 0;
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.player h2 {
+    font-size: 3rem;
+    margin: 10px 10px 10px 10px;
+}
+
+.player p {
+    margin: 20px 0 20px 0;
+    font-size: 1.2rem;
+    padding: 5px;
+
+}
+
+.letra {
+    width: 80%;
+    padding: 30px;
+}
+
+.letra p {
+    font-size: 1.3rem;
+}
+
+audio {
+    border-radius: 0px;
+    width: 70%;
+    background-color: #940000;
+    color: white;
+    filter: sepia(50%);
+    border: solid #590606 2px;
+}
+
+audio::-webkit-media-controls-enclosure {
+    background-color: #940000;
+}
+
+
+
+iframe {
+    box-shadow: -1px 2px 24px 7px rgba(0, 0, 0, 0.107);
+    border: solid #590606 2px;
+}
+
+
+footer {
+
+    background: rgb(77, 0, 0);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 60px 0 0 0;
+
+}
+
+
+
+.logos {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background: black;
+
+
+
+
+}
+
+.logos img {
+    margin: 10px 30px 20px 30px;
+    width: auto;
+    height: auto;
+
+
+}
+
+.help {
+    height: 100%;
+    width: 70%;
+    border-right: solid black 10px;
+    display: flex;
+    align-items: center;
+    margin: 0 0px 0 40px;
+}
+
+.register {
+    width: 30%;
+    margin: 0 20px 0px 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+footer div a {
+
+    margin: 20px 30px 20px 30px;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+    padding: 10px;
+}
+
+footer div input {
+    width: 100%;
+    height: 30px;
+    background: #0000007b;
+    border: solid #0e0022 2px;
+    margin: 10px 0 0 0;
+}
+
+@-webkit-keyframes cima {
+    0% {
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        background: crimson;
+    }
+}
+
+@keyframes cima {
+    0% {
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        background: crimson;
+    }
+}
+
+.musicas {
+    position: absolute;
+    width: 100%;
+    height: 258%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%230F0304' cx='50' cy='0' r='50'/%3E%3Cg fill='%231b0304' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23270304' cx='50' cy='100' r='50'/%3E%3Cg fill='%23330303' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%233f0203' cx='50' cy='200' r='50'/%3E%3Cg fill='%234b0203' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23570203' cx='50' cy='300' r='50'/%3E%3Cg fill='%23630203' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%236f0202' cx='50' cy='400' r='50'/%3E%3Cg fill='%237b0202' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23870202' cx='50' cy='500' r='50'/%3E%3Cg fill='%23930102' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%239f0102' cx='50' cy='600' r='50'/%3E%3Cg fill='%23ab0101' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b70101' cx='50' cy='700' r='50'/%3E%3Cg fill='%23c30101' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23cf0101' cx='50' cy='800' r='50'/%3E%3Cg fill='%23db0001' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e70000' cx='50' cy='900' r='50'/%3E%3Cg fill='%23f30000' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23FF0000' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+    background-attachment: fixed;
+    transition: 1s;
+    top: 0;
+    display: flex;
+    margin: 65px 0 0 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pesq {
+    width: 100%;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+.pesq input {
+    width: 20%;
+    background: white;
+    font-family: 'Kanit', sans-serif;
+    padding: 15px;
+    border: solid rgb(77, 0, 0) 2px;
+    border-radius: 159px 159px 159px 159px;
+    -webkit-border-radius: 159px 159px 159px 159px;
+    -moz-border-radius: 159px 159px 159px 159px;
+    margin: 10px;
+    font-size: 20px;
+    transition-property:
+        outline-offset, outline-color,
+        background-color;
+    transition-duration: .25s;
+}
+
+.pesq input:hover {
+    outline: solid 2px rgb(255, 255, 255);
+    border-radius: 159px 159px 159px 159px;
+    outline-offset: 2px;
+
+
+}
+
+.pesq input::-webkit-input-placeholder {
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Kanit', sans-serif;
+}
+
+.musicas h1 {
+    color: white;
+    font-size: 6rem;
+    margin: 20px 0 0 0;
+    font-family: 'Cinzel', sans-serif;
+}
+
+.musicas h2 {
+    color: white;
+    font-size: 4rem;
+    margin: 60px 0 0 0;
+    font-family: 'Cinzel', sans-serif;
+}
+
+.album {
+
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+    border-top: solid black 5px;
+    border-radius: 1%;
+
+}
+
+.album .img {
+    width: 20%;
+    height: 53%;
+    background: url('../home/believer.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 30px;
+    transition: 0.5s;
+    color: transparent;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 25px;
+    border: solid black 1px;
+    margin: 0 60px 0 0;
+}
+
+.album svg {
+    color: white;
+
+}
+
+svg:hover {
+    color: #270036 !important;
+    filter: drop-shadow(5px 5px 5px #590606);
+}
+
+
+.album svg:nth-child(1) {
+    color: white;
+    margin: 0 60px 0 0;
+
+}
+
+.album svg:nth-child(4) {
+    color: white;
+    margin: 0 0 0 60px;
+
+}
+
+.album .img:hover {
+    color: white;
+    content: 'Believe';
+    -webkit-box-shadow: inset 0px -165px 12px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px -165px 12px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px -165px 12px 0px rgba(0, 0, 0, 0.75);
+    font-family: 'Chakra petch', serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.pesq svg {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin: 0 0 0 350px;
+}
